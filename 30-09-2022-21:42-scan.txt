@@ -1,0 +1,17 @@
+Отчет о состоянии системы:
+Пользователи системы: rtkit, kernoops, systemd+, colord, avahi, root, anton, syslog, message+
+Процессов запущено: 318
+Пользовательских процессов запущено: 
+root: 180
+systemd+: 3
+avahi: 2
+message+: 1
+syslog: 1
+rtkit: 1
+colord: 1
+kernoops: 2
+anton: 127
+Всего памяти используется: 43.3%
+Всего CPU используется: 73.0%
+Больше всего памяти использует: %(2.3, 'telegram-desktop --')
+Больше всего CPU использует: %(12.9, '/opt/microsoft/msedg')
