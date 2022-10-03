@@ -32,6 +32,7 @@ command_list = list([ps[10][:20] for ps in ps_list if ps])
 ram_command_list = list(zip(ram_list, command_list))
 cpu_command_list = list(zip(cpu_list, command_list))
 
+
 file = open(filename, 'a')
 sys.stdout = file
 print(f"Отчет о состоянии системы:")
@@ -45,3 +46,7 @@ print(f"Всего CPU используется: {round(sum(cpu_list), 2)}%")
 print(f"Больше всего памяти использует: %{max(ram_command_list)}")
 print(f"Больше всего CPU использует: %{max(cpu_command_list)}")
 file.close()
+sys.stdout = sys.__stdout__
+
+with open(filename, "r") as file:
+    print(file.read())
